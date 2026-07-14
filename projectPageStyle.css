@@ -28,6 +28,8 @@ body {
 }
 .projectgrid-container {
     display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* grid-template-rows: repeat(2, 560px); */
     gap: 20px;
 }
 .projectvideo {
@@ -150,4 +152,14 @@ h1 {
     margin-bottom: 20px;
     padding-top: 50px;
     padding-left: 10px;
+}
+
+@media (max-width: 768px) {
+    .projectgrid-container {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .project-item {
+        max-width: 100%;
+    }
 }

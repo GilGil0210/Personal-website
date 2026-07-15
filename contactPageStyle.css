@@ -99,6 +99,8 @@ body{
 .gridcontainer {
     display: grid;
     gap: 10px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, 400px);
 }
 
 .grid-item {
@@ -168,4 +170,21 @@ body{
 .grid-link {
     text-decoration: none;
     color: inherit;
+}
+
+@media (max-width: 768px) {
+    .body{
+        overflow-x: hidden;
+    }
+    .gridcontainer {
+        display:grid !important;
+        grid-template-columns:1fr !important;
+        grid-template-rows:auto !important;
+        gap:25px;
+        width:100%;
+    }
+    .grid-item {
+        height: auto;
+        text-align: center;
+    }
 }

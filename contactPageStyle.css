@@ -173,6 +173,60 @@ body{
 }
 
 @media (max-width: 768px) {
+
+    body {
+        overflow-x: hidden;
+    }
+
+    .gridcontainer {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        gap: 25px;
+        width: 100%;
+    }
+
+    .grid-item {
+        height: auto;
+        text-align: center;      /* Center all text */
+        padding: 30px 20px;
+    }
+
+    /* Center all icons */
+    .mailicon,
+    .linkedinicon,
+    .igicon {
+        display: block;
+        margin: 0 auto;
+    }
+
+    /* Center all descriptions */
+    .mailDescription,
+    .linkedinDescription,
+    .igDescription {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    /* Remove the large spacing you added for desktop */
+    .linkedinDescription,
+    .igDescription {
+        margin-top: 20px;
+    }
+
+    /* Center the headings and text */
+    .mailDescription h1,
+    .mailDescription h2,
+    .linkedinDescription h1,
+    .linkedinDescription h2,
+    .igDescription h1,
+    .igDescription h2 {
+        margin-left: 0;
+        margin-right: 0;
+        text-align: center;
+    }
+}
+/* @media (max-width: 768px) {
     .body{
         overflow-x: hidden;
     }
@@ -187,4 +241,4 @@ body{
         height: auto;
         text-align: center;
     }
-}
+} */

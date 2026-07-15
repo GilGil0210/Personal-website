@@ -155,6 +155,81 @@ h1 {
 }
 
 @media (max-width: 768px) {
+
+    /* One project per row */
+    .projectgrid-container {
+        grid-template-columns: 1fr !important;
+        gap: 25px;
+    }
+
+    /* Smaller cards */
+    .project-item {
+        max-width: 90%;
+        padding: 15px;
+    }
+
+    /* Smaller videos/images */
+    .projectvideo,
+    .projectvideoGame,
+    .simpleJavaGamepic {
+        width: 100%;
+        height: auto;
+    }
+
+    /* Smaller title */
+    h1 {
+        font-size: 2rem;
+        padding-top: 20px;
+        padding-left: 0;
+        text-align: center;
+    }
+
+    /* Project name */
+    .project-description h2 {
+        font-size: 24px;
+    }
+
+    /* Subtitle */
+    .subtitle h3 {
+        font-size: 18px;
+    }
+
+    /* Description text */
+    .project-description p {
+        font-size: 16px;
+    }
+
+    /* Tech stack buttons wrap nicely */
+    .urBurntDescription,
+    .KHPDescription {
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+
+    .Figma,
+    .HTML,
+    .CSS,
+    .TailwindCSS,
+    .JavaScript,
+    .DigitalMarketing,
+    .Unity,
+    .CSharp,
+    .UXUI,
+    .Procreate,
+    .Blender,
+    .GameDesign {
+        font-size: 12px;
+        padding: 5px 8px;
+    }
+
+    /* Visit website icon */
+    .visitwebsite img,
+    .visitwebsite2 img {
+        height: 28px;
+    }
+}
+
+/* @media (max-width: 768px) {
     .projectgrid-container {
         display: grid;
         grid-template-columns: 1fr;
@@ -162,4 +237,4 @@ h1 {
     .project-item {
         max-width: 100%;
     }
-}
+} */

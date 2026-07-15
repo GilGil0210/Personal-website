@@ -172,21 +172,18 @@ body{
     color: inherit;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 768px) {
 
-    body {
-        overflow-x: hidden;
+    body{
+        overflow-x:hidden;
     }
 
-    .gridcontainer {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: auto;
-        gap: 25px;
-        width: 100%;
+    .gridcontainer{
+        grid-template-columns:1fr;
+        gap:25px;
     }
 
-    .grid-item {
+    .grid-item{
         height:auto;
         display:flex;
         flex-direction:column;
@@ -195,38 +192,42 @@ body{
         padding:30px 20px;
     }
 
-    /* Center all icons */
-    .mailicon,
-    .linkedinicon,
-    .igicon {
-        display: block;
-        margin: 0 auto;
+    .mailicon{
+        width:120px;
+        height:120px;
     }
 
-    /* Center all descriptions */
+    .linkedinicon{
+        width:100px;
+        height:100px;
+    }
+
+    .igicon{
+        width:120px;
+        height:auto;
+    }
+
     .mailDescription,
     .linkedinDescription,
-    .igDescription {
-        text-align: center;
-        margin-top: 20px;
+    .igDescription{
+        margin-top:20px;
+        text-align:center;
+        width:100%;
     }
 
-    /* Remove the large spacing you added for desktop */
-    .linkedinDescription,
-    .igDescription {
-        margin-top: 20px;
-    }
-
-    /* Center the headings and text */
     .mailDescription h1,
-    .mailDescription h2,
     .linkedinDescription h1,
-    .linkedinDescription h2,
-    .igDescription h1,
-    .igDescription h2 {
-        margin-left: 0;
-        margin-right: 0;
-        text-align: center;
+    .igDescription h1{
+        margin:10px 0;
+        font-size:28px;
+    }
+
+    .Myemail,
+    .MylinkedIn,
+    .Myinstagram{
+        font-size:16px;
+        margin:0;
+        word-break:break-word;
     }
 }
 /* @media (max-width: 768px) {

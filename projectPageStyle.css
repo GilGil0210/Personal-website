@@ -35,7 +35,7 @@ body {
 .projectvideo {
     width: 100%;
     height: 62%;
-    border-radius: 30px;
+    border-radius: 40px;
 }
 .project-item{
     max-width: 600px;
@@ -120,8 +120,9 @@ body {
     padding: 5px 10px;
 }
 .projectvideoGame{
+    width: 100%;
     height: 57%;
-    border-radius: 10px;
+    border-radius: 20px;
 }
 .Unity,
 .CSharp,

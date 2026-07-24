@@ -5,8 +5,8 @@ body {
 
     background: linear-gradient(
         135deg,
-        #7ea0c7 0%,
-        #f5f7ff 50%,
+        #2a394b 0%,
+        #b5b8c4 50%,
         #eef4ff 100%
     );
 }
@@ -28,6 +28,15 @@ body {
     width:90%;
     max-width:1300px;
     margin:0 auto;
+    transition: opacity 0.1s linear;
+}
+.lowerconatiner{
+    display: flex;
+    justify-content: center;
+    width:90%;
+    max-width:1300px;
+    margin:0 auto;
+    transition: opacity 0.1s linear;
 }
 .navcontainer
 {
@@ -43,7 +52,6 @@ body {
 }
 .nav1
 {
-    
     padding: 10px;
 }
 .nav1 ul
@@ -183,15 +191,6 @@ body {
 }
 
 .social-bar{
-    /* position: fixed;
-
-    bottom: 40px;
-    left: 40px;
-
-    display: flex;
-    gap: 30px;
-
-    font-size: 30px; */
     position: fixed;
     flex-direction:column;
     bottom: 40px;
@@ -232,9 +231,6 @@ body {
         justify-content: center;
         align-items: center;
         gap: 30px;
-
-        /* background: rgba(255,255,255,0.95);
-        backdrop-filter: blur(10px); */
 
         z-index: 1000;
     }
